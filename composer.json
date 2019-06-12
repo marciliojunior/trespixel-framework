@@ -1,0 +1,43 @@
+{
+    "name": "trespixel/framework",
+    "description": "Ferramentas auxiliares que ampliam os recursos oferecidos pelo Laravel em relacao a Models, Views e Controllers",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Marcilio Junior",
+            "email": "marcilio@outlook.com",
+            "homepage": "http://www.3pixel.com.br"
+        }
+    ],
+    "homepage": "https://github.com/marciliojunior/trespixel-framework",
+    "keywords": ["Laravel", "framework"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "trespixel\\framework\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "trespixel\\framework\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "trespixel\\framework\\frameworkServiceProvider"
+            ],
+            "aliases": {
+                "framework": "trespixel\\framework\\Facades\\framework"
+            }
+        }
+    }
+}
