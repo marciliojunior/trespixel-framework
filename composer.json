@@ -1,7 +1,7 @@
 {
     "name": "trespixel/framework",
     "description": "Ferramentas auxiliares que ampliam os recursos oferecidos pelo Laravel em relacao a Models, Views e Controllers",
-    "license": "license",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Marcilio Junior",
